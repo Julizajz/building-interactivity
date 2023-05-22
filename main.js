@@ -19,8 +19,13 @@ function mainFunction() {
 //      3.  Add a function that will change the text color in the button to black.    
 
 
-    
+    let changeColorButton = document.getElementById('change-text-color')
 
+    function changeToBlack (){
+        changeColorButton.style.color = 'black'
+    }
+
+    changeColorButton.addEventListener('click', changeToBlack)
 
 
 
@@ -38,8 +43,13 @@ function mainFunction() {
 //      3.  Add a function that will change the text in the button to "Hello World".
 
     
-    
+    let changeTextButton = document.getElementById('change-text-color');
 
+    function changeToHello() {
+        changeTextButton.innerHTML = 'Hello World'
+    }
+
+    changeTextButton.addEventListener('click', changeToHello)
 
 
 
@@ -55,7 +65,13 @@ function mainFunction() {
 //      2.  Add a click event that will display an alert box with the message 
 //          "Thank you for subscribing". 
     
-    
+    let suscribeButton = document.getElementById('subscribe-button')
+
+    function alertSucribe(){
+        alert ('Thank you for subscribing!');
+    }
+    suscribeButton.addEventListener('click', alertSucribe)
+
 
 
         
@@ -75,7 +91,14 @@ function mainFunction() {
 //          should use some sort of loop to add the event listener to each button.
 
         
-        
+        let cardButton = document.getElementsByClassName('card-btn');
+
+       function hideButton() {
+        cardButton.style.display = 'none'
+       }
+
+       cardButton.addEventListener('click', hideButton)
+
 
 
 
@@ -93,7 +116,9 @@ function mainFunction() {
 //      2.  Add a keyup event that checks the value of the user input. If value contains 
 //          the letter "h", display alert box. The .includes method may be usefull here.
 
-       
+       let userInput = document.getElementsByClassName('input-field')
+
+
 
     
 
@@ -112,7 +137,16 @@ function mainFunction() {
 
 
      
- 
+ let newsletterHeader = document.querySelector('h3')
+function hoverRed() {
+    newsletterHeader.style.color = 'red'
+}
+function hoverBlack(){
+    newsletterHeader.style.color = 'black'
+}
+
+newsletterHeader.addEventListener('mouseover', hoverRed)
+
 
 
 
